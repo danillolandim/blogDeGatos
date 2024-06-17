@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-base-white: #ffffff;
+  --color-base-blue: #065E7C;
+  --color-base-blue-300: #387E96;
+}
+
+
+html,
+body,
+input {
+  font-family: "Mulish", sans-serif;
+}
+
+
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100%;
+  
+  margin: 0 auto;
+}
+
+.container {
+  width: min(112rem, 100%);
+  padding: 1.6rem 3.2rem;
+  margin: 0 auto;
+}
+
+.container button{
+  margin-top: 2rem;
+}
+
+.container p{
+  text-align: justify;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+
+
+main {
+  background-color: var(--color-base-white);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
+  font-weight: 700;
+
+  background-color: var(--color-base-blue);
+}
+
+header form {
+  flex: 1;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 1.2rem;
+
+  background-color: var(--color-base-blue-300);
+  border: 0;
+  border-radius: 0.4rem;
+
+  
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.input-wrapper input::placeholder {
+  opacity: 0.56;
+  color: var(--color-base-white);
+}
+
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+}
+
+/* inicio do main*/
+
+#cat{
+  display: block;
+  margin:0 auto;
+}
+button{
+  border: none;
+  margin-right: 2rem;
+}
+.article{
+  padding: 1.6rem 3.2rem;
+  width: min(112rem, 100%);
+  
+}
+
+
+
+.item {
+  display: flex;
+  padding-top: 1.8rem;
+  gap: 1.2rem;
+  font-size: 1.2rem;
+}
+
+footer p {
+  text-align: center;
+  padding: 1.6rem;
+  font-weight: 600;
+  background-color:var(--color-base-blue-300);
+  color: var(--color-base-white);
+}
+
+@media (min-width: 800px){
+  #app{
+    max-width: 100%;
+    
+  }
+
+ .over img{
+    padding-left: 15rem;
+  }
+.container{
+  min-width: 100%;
+}
+.wrapper-body{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #cat{
+    width: 100%;
+    padding: 1.6rem 3.2rem;
+  }
+  .container-like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+  }
+}
